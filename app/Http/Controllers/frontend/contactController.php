@@ -14,4 +14,19 @@ class contactController extends Controller
         ];
         return view('frontend.contact', $data);
     }
+    public function sendOpinion(Request $rq)
+    {
+        // dd($rq->all());
+        //validation
+        $validatedData = $rq->validate([
+            'name'=> 'required|max:50',
+            'email'=> 'required | email:rfc',
+            'message'=> 'required',
+        ]);
+        
+        // Send email
+        
+        // Notification
+        return redirect()->route('home');
+    }
 }

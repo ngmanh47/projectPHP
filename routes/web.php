@@ -24,6 +24,7 @@ Route::group(['prefix' => 'quan-ly','namespace'=>'backend'], function () {
         Route::get('/dang-xuat', 'logincontroller@logout')->name('b.dangxuat');
     });
     // dang nhap
+    Route::get('/', 'logincontroller@login')->name('admin');
     Route::get('/dang-nhap', 'logincontroller@login')->name('b.dangnhap');
     Route::post('/dang-nhap', 'logincontroller@loginPost')->name('b.dangnhappost');
 });
@@ -47,6 +48,7 @@ Auth::routes();
 Route::group(['middleware' => 'language'], function () {
     Route::get('/','frontend\homeController@index')->name('home');
     Route::get('/contact', 'frontend\contactController@index')->name('contact');
+    Route::post('/sendopinion', 'frontend\contactController@sendOpinion')->name('sendopinion');
     Route::get('/categories/{id}', 'frontend\categoryController@index')->name('category');
     Route::get('/cart', 'frontend\cartController@index')->name('cart');
     Route::get('/add-to-cart-{id}', 'frontend\cartController@add')->name('addtocart');

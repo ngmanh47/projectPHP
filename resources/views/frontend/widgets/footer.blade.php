@@ -6,7 +6,7 @@
                     <ul class="footer_nav">
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">FAQs</a></li>
-                        <li><a href="{{route('contact')}}">Contact us</a></li>
+                        <li><a href="{{route('contact')}}">{{__('contact')}}</a></li>
                     </ul>
                 </div>
             </div>
