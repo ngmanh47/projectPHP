@@ -17,6 +17,7 @@ class homeController extends Controller
         $data = [
             'newArrivals' => $newArrivals,
             'bestSeller' => $bestSeller,
+            'pagetitle'=>'Trang chủ',
         ];
         return view('frontend.home', $data);
     }

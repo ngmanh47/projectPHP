@@ -46,8 +46,16 @@ Auth::routes();
 
 Route::group(['middleware' => 'language'], function () {
     Route::get('/','frontend\homeController@index')->name('home');
-    Route::view('/contact', 'frontend\contact')->name('contact');
+    Route::get('/contact', 'frontend\contactController@index')->name('contact');
+    Route::get('/categories/{id}', 'frontend\categoryController@index')->name('category');
     Route::get('/cart', 'frontend\cartController@index')->name('cart');
+    Route::get('/add-to-cart-{id}', 'frontend\cartController@add')->name('addtocart');
+    Route::get('/remove-item-{id}', 'frontend\cartController@removeitem')->name('removeitem');
+    Route::post('/update-items', 'frontend\cartController@updatecart')->name('updatecart');
+    Route::get('/order', 'frontend\cartController@orderindex')->name('order');
+    Route::post('/checkout', 'frontend\cartController@checkout')->name('checkout');
+    Route::get('/thongbaodathang', 'frontend\cartController@thongbaodathang')->name('thongbaodathang');
+
     Route::get('/product/{id}', 'frontend\productController@proDetail')->name('proDetail');
 });
 Route::get('change-language-{language}', 'listLanguage@changeLang')->name('changeLang');

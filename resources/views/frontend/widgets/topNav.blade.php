@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="top_nav_left">free shipping on all u.s orders over $50</div>
+                <div class="top_nav_left">{{__('top_nav')}}</div>
             </div>
             <div class="col-md-6 text-right">
                 <div class="top_nav_right">
@@ -25,8 +25,8 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="account_selection">
-                                <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                                <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> {{__('signin')}}</a></li>
+                                <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> {{__('register')}}</a></li>
                             </ul>
                         </li>
                     </ul>

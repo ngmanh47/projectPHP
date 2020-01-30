@@ -3,6 +3,7 @@
 <head>
 	@include('frontend.widgets.head')
 	@yield('style')
+
 </head>
 
 <body>

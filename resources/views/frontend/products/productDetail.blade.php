@@ -49,14 +49,14 @@
         <div class="col-lg-5">
             <div class="product_details">
                 <div class="product_details_title">
-                <h2>{{$name}}</h2>
+                <h2>{{$item->name}}</h2>
                     <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
                 </div>
                 <div class="free_delivery d-flex flex-row align-items-center justify-content-center">
                     <span class="ti-truck"></span><span>free delivery</span>
                 </div>
-                <div class="original_price">$629.99</div>
-                <div class="product_price">$495.00</div>
+                <div class="original_price">{{number_format($item->unitprice) .' đ'}}</div>
+                <div class="product_price">{{number_format($item->unitprice) .' đ'}}</div>
                 <ul class="star_rating">
                     <li><i class="fa fa-star" aria-hidden="true"></i></li>
                     <li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -79,7 +79,7 @@
                         <span id="quantity_value">1</span>
                         <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
                     </div>
-                    <div class="ml-3"><button class="btn btn-danger">Add to cart</button></div>
+                    <div class="ml-3"><a class="btn btn-danger" href="{{route('addtocart',$item->id)}}">Add to cart</a></div>
                 </div>
             </div>
         </div>

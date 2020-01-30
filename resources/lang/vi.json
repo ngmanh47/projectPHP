@@ -1,5 +1,12 @@
 {
     "home": "Trang chủ",
     "language": "Việt nam",
-    "myAccount": "Tài khoản"
+    "myAccount": "Tài khoản",
+    "signin":"Đăng nhập",
+    "register":"Đăng ký",
+    "top_nav": "Miễn phí vận chuyển cho đơn hàng từ 1.000.000",
+    "pants": "Quần",
+    "shirts": "Áo",
+    "accessories": "Phụ kiện",
+    "contact": "Liên hệ"
 }

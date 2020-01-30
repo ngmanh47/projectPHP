@@ -1,6 +1,12 @@
 {
     "home": "Home",
     "language": "English",
-    "myAccount": "My Account"
-
+    "myAccount": "My Account",
+    "signin":"Sign in",
+    "register":"Register",
+    "top_nav": "free shipping on all u.s orders over $50",
+    "pants": "Pants",
+    "shirts": "Shirts",
+    "accessories": "accessories",
+    "contact": "contact"
 }
